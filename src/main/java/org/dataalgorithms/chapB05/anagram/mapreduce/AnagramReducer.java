@@ -37,7 +37,7 @@ public class AnagramReducer
         // if there are more than one word for a sorted word, 
         // then these are the anagrams
         //
-        if (set.size() >= 1) {
+        if (set.size() >0) {
             context.write(key, new Text(set.toString()));
         }
         /*if (set.size() >= 1) {
